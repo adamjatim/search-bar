@@ -18,6 +18,8 @@ searchForm.addEventListener("submit", (event) => {
       window.location.href = googleSearch;
     } else if (ddgSearchBtn === event.submitter) {
       window.location.href = ddgSearch;
+    } else {
+      window.location.href = googleSearch; // default to Google search if no button is clicked
     }
   }
 });

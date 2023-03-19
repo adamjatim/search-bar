@@ -8,11 +8,16 @@
     <div class="search-bar">
       <form id="search-form" action="">
         <input id="search-input" type="text" placeholder="Search...">
-        <button id="google-search-btn" type="submit">Google</button>
-        <button id="ddg-search-btn" type="submit">DuckDuckGo</button>
+        <button id="search-btn" type="submit">Search</button>
+        <div id="search-engine-select">
+          <input type="radio" id="google-radio" name="search-engine" value="google" checked>
+          <label for="google-radio">Google</label>
+          <input type="radio" id="ddg-radio" name="search-engine" value="ddg">
+          <label for="ddg-radio">DuckDuckGo</label>
+        </div>
       </form>
     </div>
 
-    <script src="script.js"></script>
+    <script src="search.js"></script>
   </body>
 </html>

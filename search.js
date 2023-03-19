@@ -1,8 +1,7 @@
 const searchForm = document.querySelector("#search-form");
 const searchInput = document.querySelector("#search-input");
 const searchBtn = document.querySelector("#search-btn");
-const googleRadio = document.querySelector("#google-radio");
-const ddgRadio = document.querySelector("#ddg-radio");
+const searchEngineSelect = document.querySelector("#search-engine-select");
 
 const googleUrl = "https://www.google.com/search?q=";
 const ddgUrl = "https://duckduckgo.com/?q=";
@@ -14,9 +13,9 @@ searchForm.addEventListener("submit", (event) => {
   if (searchTerm) {
     let searchUrl;
 
-    if (googleRadio.checked) {
+    if (searchEngineSelect.value === "google") {
       searchUrl = googleUrl + searchTerm;
-    } else if (ddgRadio.checked) {
+    } else if (searchEngineSelect.value === "ddg") {
       searchUrl = ddgUrl + searchTerm;
     }
 

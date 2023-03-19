@@ -1,0 +1,36 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  #google-search-btn,
+  #ddg-search-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #google-search-btn:hover,
+  #ddg-search-btn:hover {
+    background-color: #0069d9;
+  }
+  

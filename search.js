@@ -24,3 +24,9 @@ searchForm.addEventListener("submit", (event) => {
     }
   }
 });
+
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    searchForm.dispatchEvent(new Event("submit"));
+  }
+});
